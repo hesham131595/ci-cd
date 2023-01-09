@@ -45,11 +45,10 @@ jobs:
     docker:
       - image:  circleci/node:13.8.0
     steps:
-      - run:
-        commmand: cat /tmp/output.txt
       - attach_workspace:
           at: /tmp/
-  
+      - run:
+        commmand: cat /tmp/output.txt 
 # Invoke jobs via workflows
 # See: https://circleci.com/docs/2.0/configuration-reference/#workflows
 workflows:
