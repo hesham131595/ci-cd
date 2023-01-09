@@ -73,7 +73,7 @@ jobs:
       - run: 
           name: the first
           command: echo "hello world" > ~/output.txt
-      - print_pipeline_id
+      - print_pipeline_id > ~/output.txt
       - persist_to_workspace:
           root: ~/
           paths:
