@@ -72,7 +72,7 @@ jobs:
     steps:
       - run: 
           name: the first
-          command: echo "hello world" && print_pipeline_id > ~/output.txt
+          command: echo "hello world" && << print_pipeline_id >> > ~/output.txt
      # - print_pipeline_id > ~/output.txt
       - persist_to_workspace:
           root: ~/
