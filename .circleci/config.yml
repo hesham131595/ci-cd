@@ -67,6 +67,7 @@ jobs:
       - image: circleci/node:13.8.0
     steps:
       - run: 
+        key: "hello world"
         command: echo "hello world" > ~/output.txt
       - persist_to_workspace:
           root: ~/
